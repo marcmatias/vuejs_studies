@@ -1,6 +1,6 @@
 # Vuejs 3 Estudos
 
-Estudos de Vuejs 3 basedos nas video aulas https://www.youtube.com/playlist?list=PLC3y8-rFHvwgeQIfSDtEGVvvSEPDkL_1f do canal **Codevolution**
+Estudos de Vuejs 3 basedos nas video aulas [Link da playlist de aulas](https://www.youtube.com/playlist?list=PLC3y8-rFHvwgeQIfSDtEGVvvSEPDkL_1f)  do canal **Codevolution**
 
 ## Como são feitos:
 
@@ -13,9 +13,9 @@ Estudos de Vuejs 3 basedos nas video aulas https://www.youtube.com/playlist?list
 ## Links relevantes:
 
 
-**Canal Codevolution:** https://www.youtube.com/channel/UC80PWRj_ZU8Zu0HSMNVwKWw
+**Canal Codevolution:** [Codevolution](https://www.youtube.com/channel/UC80PWRj_ZU8Zu0HSMNVwKWw)
 
-**Vuejs:** https://vuejs.org/
+**Vuejs:** <https://vuejs.org/>
 
 
 ## Project setup
