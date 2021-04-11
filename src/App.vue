@@ -5,18 +5,21 @@
     <!-- Components -->
     <!-- <HelloWorld /> -->
     <!-- <ConditionalExample /> -->
+    <ListExample />
   </div>
 </template>
 
 <script>
 // import HelloWorld from "./components/HelloWorld.vue";
 // import ConditionalExample from "./components/ConditionalExamples.vue";
+import ListExample from "./components/ListExample.vue";
 
 export default {
   name: "App",
   components: {
     // HelloWorld
     // ConditionalExample,
+    ListExample,
   },
 };
 </script>
