@@ -6,7 +6,8 @@
     <!-- <HelloWorld /> -->
     <!-- <ConditionalExample /> -->
     <!-- <ListExample /> -->
-    <ListConditionalExample />
+    <!-- <ListConditionalExample /> -->
+    <Methods />
   </div>
 </template>
 
@@ -14,14 +15,16 @@
 // import HelloWorld from "./components/HelloWorld.vue";
 // import ConditionalExample from "./components/ConditionalExamples.vue";
 // import ListExample from "./components/ListExample.vue";
-import ListConditionalExample from "./components/ListConditionalExample.vue";
+// import ListConditionalExample from "./components/ListConditionalExample.vue";
+import Methods from "./components/Methods.vue";
 
 export default {
   name: "App",
   components: {
     // HelloWorld
     // ConditionalExample,
-    ListConditionalExample,
+    // ListConditionalExample,
+    Methods,
   },
 };
 </script>
