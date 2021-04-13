@@ -7,7 +7,8 @@
     <!-- <ConditionalExample /> -->
     <!-- <ListExample /> -->
     <!-- <ListConditionalExample /> -->
-    <Methods />
+    <!-- <Methods /> -->
+    <!-- <EventHandling /> -->
   </div>
 </template>
 
@@ -16,7 +17,8 @@
 // import ConditionalExample from "./components/ConditionalExamples.vue";
 // import ListExample from "./components/ListExample.vue";
 // import ListConditionalExample from "./components/ListConditionalExample.vue";
-import Methods from "./components/Methods.vue";
+// import Methods from "./components/Methods.vue";
+// import EventHandling from "./components/EventHandling.vue";
 
 export default {
   name: "App",
@@ -24,18 +26,22 @@ export default {
     // HelloWorld
     // ConditionalExample,
     // ListConditionalExample,
-    Methods,
+    // Methods,
+    // EventHandling,
   },
 };
 </script>
 
 <style>
+body {
+  background-color: rgb(17, 17, 17);
+}
 #index {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: rgb(241, 241, 241);
   margin-top: 60px;
 }
 #title {
