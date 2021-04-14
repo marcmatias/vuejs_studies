@@ -9,6 +9,7 @@
     <!-- <ListConditionalExample /> -->
     <!-- <Methods /> -->
     <!-- <EventHandling /> -->
+    <Computed />
   </div>
 </template>
 
@@ -19,6 +20,7 @@
 // import ListConditionalExample from "./components/ListConditionalExample.vue";
 // import Methods from "./components/Methods.vue";
 // import EventHandling from "./components/EventHandling.vue";
+import Computed from "./components/Computed.vue";
 
 export default {
   name: "App",
@@ -28,6 +30,7 @@ export default {
     // ListConditionalExample,
     // Methods,
     // EventHandling,
+    Computed,
   },
 };
 </script>
