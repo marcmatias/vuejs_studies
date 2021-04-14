@@ -1,7 +1,6 @@
 <template>
   <div id="index">
     <h1 id="title">Index</h1>
-
     <!-- Components -->
     <!-- <HelloWorld /> -->
     <!-- <ConditionalExample /> -->
@@ -9,7 +8,8 @@
     <!-- <ListConditionalExample /> -->
     <!-- <Methods /> -->
     <!-- <EventHandling /> -->
-    <Computed />
+    <!-- <Computed /> -->
+    <SetterComputed />
   </div>
 </template>
 
@@ -20,7 +20,8 @@
 // import ListConditionalExample from "./components/ListConditionalExample.vue";
 // import Methods from "./components/Methods.vue";
 // import EventHandling from "./components/EventHandling.vue";
-import Computed from "./components/Computed.vue";
+// import Computed from "./components/Computed.vue";
+import SetterComputed from "./components/SetterComputed.vue";
 
 export default {
   name: "App",
@@ -30,7 +31,8 @@ export default {
     // ListConditionalExample,
     // Methods,
     // EventHandling,
-    Computed,
+    // Computed,
+    SetterComputed,
   },
 };
 </script>
