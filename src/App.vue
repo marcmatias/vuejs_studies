@@ -9,7 +9,8 @@
     <!-- <Methods /> -->
     <!-- <EventHandling /> -->
     <!-- <Computed /> -->
-    <SetterComputed />
+    <!-- <SetterComputed /> -->
+    <Watcher />
   </div>
 </template>
 
@@ -21,7 +22,8 @@
 // import Methods from "./components/Methods.vue";
 // import EventHandling from "./components/EventHandling.vue";
 // import Computed from "./components/Computed.vue";
-import SetterComputed from "./components/SetterComputed.vue";
+// import SetterComputed from "./components/SetterComputed.vue";
+import Watcher from "./components/Watcher.vue";
 
 export default {
   name: "App",
@@ -32,7 +34,8 @@ export default {
     // Methods,
     // EventHandling,
     // Computed,
-    SetterComputed,
+    // SetterComputed,
+    Watcher,
   },
 };
 </script>
