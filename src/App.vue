@@ -1,6 +1,7 @@
 <template>
   <div id="index">
     <h1 id="title">Index</h1>
+    <!-- <input type="text" v-model="inputtext"> -->
     <!-- Components -->
     <!-- <HelloWorld /> -->
     <!-- <ConditionalExample /> -->
@@ -11,7 +12,10 @@
     <!-- <Computed /> -->
     <!-- <SetterComputed /> -->
     <!-- <Watcher /> -->
-    <C />
+    <!-- <C /> -->
+    <Greet name="Hero" last-name="Link" />
+    <Greet name="Princess" last-name="Zelda" />
+    <Greet :name="firstName" :last-name="lastName" />
   </div>
 </template>
 
@@ -25,13 +29,16 @@
 // import Computed from "./components/Computed.vue";
 // import SetterComputed from "./components/SetterComputed.vue";
 // import Watcher from "./components/Watcher.vue";
-import C from "./components/provInje/C.vue";
+import Greet from "./components/Greet.vue";
+// import C from "./components/provInje/C.vue";
 
 export default {
   name: "App",
   data() {
     return {
-      lastname: "Marques",
+      inputtext: "",
+      firstName: "Marcel",
+      lastName: "Marques",
     };
   },
   components: {
@@ -43,27 +50,24 @@ export default {
     // Computed,
     // SetterComputed,
     // Watcher,
-    C,
+    Greet,
+    // C, //Provide, Inject example
   },
   provide() {
     return {
       username: "Marcel",
-      lastname: this.lastname,
+      lastname: this.lastName,
     };
   },
 };
 </script>
 
 <style>
-body {
-  background-color: rgb(17, 17, 17);
-}
 #index {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: rgb(241, 241, 241);
   margin-top: 60px;
 }
 #title {
