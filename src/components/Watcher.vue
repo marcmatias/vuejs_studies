@@ -4,6 +4,9 @@
   <div>
     <button @click="volume += 2">Increase</button>
     <button @click="volume -= 2">Decrese</button>
+    <input type="text" v-model="movie" />
+    <input type="text" v-model="movieInfo.title" />
+    <input type="text" v-model="movieInfo.actor" />
   </div>
 </template>
 
@@ -12,6 +15,11 @@ export default {
   data() {
     return {
       volume: 0,
+      movie: "Batman",
+      movieInfo: {
+        title: "",
+        actor: "",
+      },
     };
   },
   methods: {},
@@ -23,6 +31,20 @@ export default {
           "Listening to a high volume for a long time may damage your hearing"
         );
       }
+    },
+    movie: {
+      handler(newValue) {
+        console.log(
+          `Calling API with movie name = ${newValue.title} and actor = ${newValue.actor}`
+        );
+      },
+      immediate: true,
+    },
+    movieInfo: {
+      handler(newValue) {
+        console.log(`Calling API with movie with title = ${newValue}`);
+      },
+      deep: true,
     },
   },
 };
