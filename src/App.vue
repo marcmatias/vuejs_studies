@@ -13,9 +13,10 @@
     <!-- <SetterComputed /> -->
     <!-- <Watcher /> -->
     <!-- <C /> -->
-    <Greet name="Hero" last-name="Link" />
+    <!-- <Greet name="Hero" last-name="Link" />
     <Greet name="Princess" last-name="Zelda" />
-    <Greet :name="firstName" :last-name="lastName" />
+    <Greet :name="firstName" :last-name="lastName" /> -->
+    <Article title="Article Title" :is-published="true" />
   </div>
 </template>
 
@@ -29,8 +30,9 @@
 // import Computed from "./components/Computed.vue";
 // import SetterComputed from "./components/SetterComputed.vue";
 // import Watcher from "./components/Watcher.vue";
-import Greet from "./components/Greet.vue";
+// import Greet from "./components/Greet.vue";
 // import C from "./components/provInje/C.vue";
+import Article from "./components/Article.vue";
 
 export default {
   name: "App",
@@ -50,8 +52,9 @@ export default {
     // Computed,
     // SetterComputed,
     // Watcher,
-    Greet,
+    // Greet,
     // C, //Provide, Inject example
+    Article,
   },
   provide() {
     return {
