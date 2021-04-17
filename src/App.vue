@@ -10,7 +10,8 @@
     <!-- <EventHandling /> -->
     <!-- <Computed /> -->
     <!-- <SetterComputed /> -->
-    <Watcher />
+    <!-- <Watcher /> -->
+    <C />
   </div>
 </template>
 
@@ -23,10 +24,16 @@
 // import EventHandling from "./components/EventHandling.vue";
 // import Computed from "./components/Computed.vue";
 // import SetterComputed from "./components/SetterComputed.vue";
-import Watcher from "./components/Watcher.vue";
+// import Watcher from "./components/Watcher.vue";
+import C from "./components/provInje/C.vue";
 
 export default {
   name: "App",
+  data() {
+    return {
+      lastname: "Marques",
+    };
+  },
   components: {
     // HelloWorld
     // ConditionalExample,
@@ -35,7 +42,14 @@ export default {
     // EventHandling,
     // Computed,
     // SetterComputed,
-    Watcher,
+    // Watcher,
+    C,
+  },
+  provide() {
+    return {
+      username: "Marcel",
+      lastname: this.lastname,
+    };
   },
 };
 </script>
