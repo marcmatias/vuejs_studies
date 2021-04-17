@@ -16,6 +16,7 @@
 
 <script>
 export default {
+  name: "ConditionalExamples",
   data() {
     return {
       num: "Hello",

@@ -17,6 +17,7 @@
 
 <script>
 export default {
+  name: "Computed",
   data() {
     return {
       firstName: "Bruce",

@@ -23,6 +23,7 @@
 
 <script>
 export default {
+  name: "ListExample",
   data() {
     return {
       names: ["Bruce", "Clark", "Diana"],

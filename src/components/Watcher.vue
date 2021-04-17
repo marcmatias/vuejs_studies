@@ -12,6 +12,7 @@
 
 <script>
 export default {
+  name: "Watcher",
   data() {
     return {
       volume: 0,

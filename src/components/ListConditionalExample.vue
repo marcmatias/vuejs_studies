@@ -10,6 +10,7 @@
 
 <script>
 export default {
+  name: "ListConditionalExample",
   data() {
     return {
       names: ["Bruce", "Diana", "Clark"],

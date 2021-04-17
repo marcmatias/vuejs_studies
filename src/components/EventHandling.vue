@@ -12,6 +12,7 @@
 
 <script>
 export default {
+  name: "EventHandling",
   data() {
     return {
       name: "Marcel",

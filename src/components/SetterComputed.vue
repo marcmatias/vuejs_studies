@@ -5,6 +5,7 @@
 
 <script>
 export default {
+  name: "SetterComputed",
   data() {
     return {
       firstName: "Bruce",

@@ -6,6 +6,7 @@
 
 <script>
 export default {
+  name: "Methods",
   data() {
     return {
       baseMultiplier: 15,
