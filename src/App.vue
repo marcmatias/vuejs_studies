@@ -16,7 +16,7 @@
     <!-- <Greet name="Hero" last-name="Link" />
     <Greet name="Princess" last-name="Zelda" />
     <Greet :name="firstName" :last-name="lastName" /> -->
-    <Article title="Article Title" :is-published="true" />
+    <Article id="article" title="Article Title" :is-published="true" />
   </div>
 </template>
 
