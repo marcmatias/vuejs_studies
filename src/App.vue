@@ -16,7 +16,9 @@
     <!-- <Greet name="Hero" last-name="Link" />
     <Greet name="Princess" last-name="Zelda" />
     <Greet :name="firstName" :last-name="lastName" /> -->
-    <Article id="article" title="Article Title" :is-published="true" />
+    <!-- <Article id="article" title="Article Title" :is-published="true" /> -->
+    <button @click="showPopup = true">ShowPopup</button>
+    <Popup v-show="showPopup" @close="closePopup"/>
   </div>
 </template>
 
@@ -32,8 +34,8 @@
 // import Watcher from "./components/Watcher.vue";
 // import Greet from "./components/Greet.vue";
 // import C from "./components/provInje/C.vue";
-import Article from "./components/Article.vue";
-
+// import Article from "./components/Article.vue";
+import Popup from "./components/Popup.vue"
 export default {
   name: "App",
   data() {
@@ -41,6 +43,7 @@ export default {
       inputtext: "",
       firstName: "Marcel",
       lastName: "Marques",
+      showPopup: false,
     };
   },
   components: {
@@ -54,7 +57,14 @@ export default {
     // Watcher,
     // Greet,
     // C, //Provide, Inject example
-    Article,
+    // Article,
+    Popup,
+  },
+  methods: {
+    closePopup(name) {
+      this.showPopup = false
+      console.log(name)
+    }
   },
   provide() {
     return {
