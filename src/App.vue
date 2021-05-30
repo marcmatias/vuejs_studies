@@ -17,8 +17,9 @@
     <Greet name="Princess" last-name="Zelda" />
     <Greet :name="firstName" :last-name="lastName" /> -->
     <!-- <Article id="article" title="Article Title" :is-published="true" /> -->
-    <button @click="showPopup = true">ShowPopup</button>
-    <Popup v-show="showPopup" @close="closePopup"/>
+    <!-- <button @click="showPopup = true">ShowPopup</button> -->
+    <!-- <Popup v-show="showPopup" @close="closePopup"/> -->
+    <Input v-model="name" />
   </div>
 </template>
 
@@ -35,11 +36,13 @@
 // import Greet from "./components/Greet.vue";
 // import C from "./components/provInje/C.vue";
 // import Article from "./components/Article.vue";
-import Popup from "./components/Popup.vue"
+// import Popup from "./components/Popup.vue"
+import Input from "./components/Input.vue";
 export default {
   name: "App",
   data() {
     return {
+      name: "",
       inputtext: "",
       firstName: "Marcel",
       lastName: "Marques",
@@ -58,13 +61,14 @@ export default {
     // Greet,
     // C, //Provide, Inject example
     // Article,
-    Popup,
+    // Popup,
+    Input,
   },
   methods: {
     closePopup(name) {
-      this.showPopup = false
-      console.log(name)
-    }
+      this.showPopup = false;
+      console.log(name);
+    },
   },
   provide() {
     return {
